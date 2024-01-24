@@ -1,0 +1,25 @@
+{
+  "name": "cypresslearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "executeTestOnChromeHeaded": "npx cypress run --spec ./cypress/e2e/amazonApp/*spec.cy.js --browser chrome --headed",
+    "TestingCypress": "npx cypress run --spec ./cypress/e2e/amazonApp/amazonLogin.spec.cy.js --browser chrome --headed --record --key 09be2e4c-07c4-4de0-9a1c-c7a1820cf21d",
+    "ExerciseTesting": "npx cypress run --spec ./cypress/e2e/Exercise_Learning/OrangeHrm.spec.cy.js --browser chrome --headed",
+    "WebApp_Cypress":"npx cypress run --spec ./cypress/e2e/WEBAPP/OrangeHRM.spec.cy.js --browser chrome --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.6.2",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1"
+  }
+}
